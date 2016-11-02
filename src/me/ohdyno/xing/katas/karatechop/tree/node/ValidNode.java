@@ -1,19 +1,10 @@
-package me.ohdyno.xing.katas.karatechop.tree;
+package me.ohdyno.xing.katas.karatechop.tree.node;
 
-class NodeFactory {
-    static Node create(int[] numbers, int low, int high) {
-        if (low >= high)
-            return new NullNode();
-        else
-            return new BSTNode(numbers, low, high);
-    }
-}
-
-class BSTNode implements Node {
+class ValidNode implements Node {
     private int low, high;
     private int[] numbers;
 
-    BSTNode(int[] numbers, int low, int high) {
+    ValidNode(int[] numbers, int low, int high) {
         this.numbers = numbers;
         this.low = low;
         this.high = high;
@@ -44,28 +35,5 @@ class BSTNode implements Node {
     }
     private int getMid() {
         return (low + high) / 2;
-    }
-}
-
-class NullNode implements Node {
-
-    @Override
-    public Node left() {
-        return this;
-    }
-
-    @Override
-    public Node right() {
-        return this;
-    }
-
-    @Override
-    public int compareKey(int key) {
-        return 0;
-    }
-
-    @Override
-    public int getValue() {
-        return -1;
     }
 }

@@ -1,11 +1,9 @@
-package me.ohdyno.xing.katas.karatechop.tree;
+package me.ohdyno.xing.katas.karatechop.tree.node;
 
-interface Node {
+public interface Node {
     Node left();
-
     Node right();
 
     int compareKey(int key);
-
     int getValue();
 }

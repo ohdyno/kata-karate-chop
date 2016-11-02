@@ -1,5 +1,8 @@
 package me.ohdyno.xing.katas.karatechop.tree;
 
+import me.ohdyno.xing.katas.karatechop.tree.node.Node;
+import me.ohdyno.xing.katas.karatechop.tree.node.NodeFactory;
+
 class BST {
     private Node root;
 
