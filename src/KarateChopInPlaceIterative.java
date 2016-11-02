@@ -1,4 +1,4 @@
-public class KarateInPlaceIterative implements Karate {
+public class KarateChopInPlaceIterative implements KarateChop {
     @Override
     public int chop(int target, int[] numbers) {
         int low = 0;

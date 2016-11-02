@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class KaratePartitionRecursive implements Karate {
+public class KarateChopPartitionRecursive implements KarateChop {
     @Override
     public int chop(int target, int[] numbers) {
         return chopWithOffset(target, numbers, 0);

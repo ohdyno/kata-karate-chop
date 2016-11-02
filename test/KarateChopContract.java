@@ -2,7 +2,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public interface KarateChopContract extends Karate {
+public interface KarateChopContract extends KarateChop {
 
     int[] EMPTY_ARRAY = {};
     int[] SINGLETON_ARRAY = {1};

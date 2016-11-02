@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class KaratePartitionIterative implements Karate {
+public class KarateChopPartitionIterative implements KarateChop {
     @Override
     public int chop(int target, int[] numbers) {
         int offset = 0;

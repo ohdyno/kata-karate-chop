@@ -1,4 +1,4 @@
-public class KarateInPlaceRecursive implements Karate {
+public class KarateChopInPlaceRecursive implements KarateChop {
     public int chop(int target, int[] numbers) {
         return chopInPlace(target, numbers, 0, numbers.length);
     }
