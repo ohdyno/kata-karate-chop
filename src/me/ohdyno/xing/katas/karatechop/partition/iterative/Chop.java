@@ -1,8 +1,12 @@
+package me.ohdyno.xing.katas.karatechop.partition.iterative;
+
+import me.ohdyno.xing.katas.karatechop.KarateChop;
+
 import java.util.Arrays;
 
-public class KarateChopPartitionIterative implements KarateChop {
+public class Chop implements KarateChop {
     @Override
-    public int chop(int target, int[] numbers) {
+    public int doIt(int target, int[] numbers) {
         int offset = 0;
         while (numbers.length > 0) {
             int mid = numbers.length / 2;

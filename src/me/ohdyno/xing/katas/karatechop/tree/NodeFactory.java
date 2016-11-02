@@ -1,3 +1,5 @@
+package me.ohdyno.xing.katas.karatechop.tree;
+
 class NodeFactory {
     static Node create(int[] numbers, int low, int high) {
         if (low >= high)

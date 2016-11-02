@@ -1,6 +1,10 @@
-public class KarateChopInPlaceIterative implements KarateChop {
+package me.ohdyno.xing.katas.karatechop.inplace.iterative;
+
+import me.ohdyno.xing.katas.karatechop.KarateChop;
+
+public class Chop implements KarateChop {
     @Override
-    public int chop(int target, int[] numbers) {
+    public int doIt(int target, int[] numbers) {
         int low = 0;
         int high = numbers.length;
 
